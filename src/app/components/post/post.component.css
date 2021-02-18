@@ -1,0 +1,21 @@
+
+
+.card{
+    padding: 10px;
+    margin: 20px;
+    border-style: ridge;
+    border-color:rgb(255, 218, 11);
+    border-radius: 20px;
+    border-width: 1px;
+    text-align: center;
+    background-color: beige;
+}
+
+a{
+    cursor: pointer;
+    color:red;
+    max-width: 80px;
+    
+    border-radius: 3px;
+    border:white;
+}

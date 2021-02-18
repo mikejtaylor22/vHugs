@@ -1,0 +1,25 @@
+
+
+<div *ngFor="let post of myArray">
+    <h1>{{post.subject}}</h1>
+    <h3>{{post.body}}</h3> 
+
+    <span>{{"Hugs: " + post.hugs}}</span>
+    <br>
+    <span>replies:</span>
+        <div *ngFor="let reply of replies">
+            
+            <p><em>{{reply.message}}</em></p>
+            
+        </div>
+
+      
+        
+    <div>
+        
+        <input type="text" name="reply" placeholder="Enter Reply" [(ngModel)]="replyText">
+        <button type="submit" (click)="addReply()">Add Reply</button>
+    </div>
+
+    
+</div>

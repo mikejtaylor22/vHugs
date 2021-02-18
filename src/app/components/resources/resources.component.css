@@ -1,0 +1,65 @@
+.postHeader{
+    color:green;
+}
+
+.headerDiv{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+h4 {
+    margin-bottom: 0px;
+}
+
+#post{
+    display: flex;
+    justify-content: center;
+}
+
+#menu {
+    /* border: 1px solid #999;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    width: 300px;
+    font-family: Arial, sans-serif;
+    font-size: 14px; */
+    max-width: 275px;
+}
+
+#menu:hover {
+    background-color: #efefef;
+}
+
+/* p #menu {
+    font-size: 30px;
+} */
+
+#menu > ul {
+    display: none;
+    list-style: none;
+}
+
+#menu:hover > ul {
+    display: block;
+}
+
+#menu > ul ul {
+    /* margin-left: 1px; */
+    list-style: none;
+}
+
+#menu > ul a, #select > p {
+    display: block;
+    padding: 3px 8px 4px;
+    color: #333;
+    text-decoration: none;
+}
+
+#menu > ul a:hover {
+    background-color: #ddd;
+}
+
+#res-contacts {
+    margin-top: 80px;
+}

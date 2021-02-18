@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "vhugs"
+    }
+  },
+  "defaultProject": "vhugs",
+  "cli": {
+    "analytics": false
+  }
 }

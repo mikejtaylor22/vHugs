@@ -1,0 +1,20 @@
+<header>
+    <!-- <nav class="navbar navbar-expand-md navbar-white bg-dark"> -->
+        <nav class="navbar navbar-light navbar-expand-md " style="background-color:blueviolet;">
+        <div><a routerLink="" class="navbar-brand"><span class="vhugs">vHugs</span></a></div>
+
+        <ul class="navbar-nav">
+           
+            <li *ngIf="loginService.isUserLoggedIn"><a routerLink="post" class="nav-link">Home</a></li>
+            <li *ngIf="loginService.isUserLoggedIn"><a routerLink="resource" class="nav-link">Resources</a></li>
+            <li *ngIf="loginService.isUserLoggedIn"><a routerLink="addpost"><button type="submit" class="btn btn-outline-warning" style="color: green;">New Post</button></a></li> 
+            
+        </ul>
+
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+            
+           <li *ngIf="loginService.isUserLoggedIn" class="nav-link" style="color: rgb(43, 226, 119);">{{this.loginService.getUsername()}}</li>
+            <li *ngIf="loginService.isUserLoggedIn"><a routerLink="logout" class="nav-link">Logout</a></li> 
+        </ul>
+    </nav>
+</header>

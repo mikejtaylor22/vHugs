@@ -1,0 +1,18 @@
+<p>post works!</p>
+
+<div class="container">
+<div class="card" style="width: 55rem" *ngFor="let post of posts">
+    <div class="card-body">
+    <h1 class="card-title">{{post.subject}}</h1>
+    
+    <p class="card-text">{{post.body}}</p>
+    <a class="card-link" (click)="goToSinglePost(post.id)">View Post</a>
+    <a class="card-link" (click)="addHug(post.id)">Hug:{{" " +post.hugs}}</a>
+    <!-- <button type="submit" class="btn btn-success" (click)="goToSinglePost(post.id)">View Post</button> -->
+</div>
+</div>
+
+<!-- <div class="addPostDiv">
+    <button type="submit" class="btn btn-outline-warning" style="color: green;" (click)="addPost()">Add Post</button>
+</div> -->
+</div>
