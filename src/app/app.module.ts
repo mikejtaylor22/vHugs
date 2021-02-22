@@ -13,6 +13,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { LogoutComponent } from './components/logout/logout.component';
 import { ErrorComponent } from './components/error/error.component';
 import { ResourcesComponent } from './components/resources/resources.component';
+import { UploadComponent } from './components/upload/upload.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ResourcesComponent } from './components/resources/resources.component';
     HeaderComponent,
     LogoutComponent,
     ErrorComponent,
-    ResourcesComponent
+    ResourcesComponent,
+    UploadComponent
   ],
   imports: [
     BrowserModule,
