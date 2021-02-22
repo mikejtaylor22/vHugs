@@ -8,6 +8,7 @@ import {LogoutComponent} from '../app/components/logout/logout.component';
 import {RouteGuardService} from './route-guard.service';
 import {ErrorComponent} from './components/error/error.component';
 import {ResourcesComponent} from './components/resources/resources.component';
+import { UploadComponent } from './components/upload/upload.component';
 
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'enabled',
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path:"addpost",component:AddpostComponent,canActivate:[RouteGuardService]},
   {path:"logout",component:LogoutComponent,canActivate:[RouteGuardService]},
   {path:"resource",component:ResourcesComponent,canActivate:[RouteGuardService]},
+  {path:"upload",component:UploadComponent,canActivate:[RouteGuardService]},
   
 
 
